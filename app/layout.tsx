@@ -10,9 +10,9 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Ghalib Hussain| Software Developer Portfolio",
   description:
-    "Passionate Software Developer | SIH 2023 Winner | 1000+ Problems Solved | Building scalable web applications",
+    "Passionate Software Developer | SIH 2023 Winner | 1000+ Problems Solved | Building scalable Backend applications Integrated with AI",
   generator: "v0.app",
-  keywords: ["software developer", "full stack", "react", "next.js", "portfolio"],
+  keywords: ["software developer", "Java", "react", "SpringBoot", "portfolio"],
   authors: [{ name: "Ghalib Hussain" }],
   icons: {
     icon: [

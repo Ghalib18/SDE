@@ -3,117 +3,161 @@
 import { motion } from "framer-motion"
 
 const skills = [
-  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", color: "#1572B6" },
   {
-    name: "Express",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-    color: "#000000",
-  },
-  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", color: "#F05032" },
-  {
-    name: "GitHub",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-    color: "#181717",
+    name: "Java",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
   },
   {
-    name: "HTML5",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    color: "#E34F26",
+    name: "Spring Boot",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
   },
   {
-    name: "JavaScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    color: "#F7DF1E",
+    name: "Spring Security",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
   },
   {
-    name: "MongoDB",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    color: "#47A248",
-  },
-  {
-    name: "Material UI",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
-    color: "#0081CB",
-  },
-  {
-    name: "Node.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    color: "#339933",
-  },
-  {
-    name: "React",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    color: "#61DAFB",
-  },
-  {
-    name: "Redux",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-    color: "#764ABC",
-  },
-  {
-    name: "Tailwind",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-    color: "#06B6D4",
-  },
-  {
-    name: "TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    color: "#3178C6",
-  },
-  {
-    name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    color: "#000000",
+    name: "Hibernate",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg",
   },
   {
     name: "PostgreSQL",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-    color: "#336791",
+  },
+  {
+    name: "Redis",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+  },
+  {
+    name: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  },
+  {
+    name: "React",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
     name: "C++",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-    color: "#00599C",
+  },
+  {
+    name: "RAG",
+    icon: "https://cdn.simpleicons.org/chainlink/375BD2",
+  },
+  {
+  name: "Kubernetes",
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg",
+},
+{
+  name: "Docker",
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+},
+
+{
+  name: "Kafka",
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg",
+},
+  {
+    name: "GenAI",
+    icon: "https://cdn.simpleicons.org/google/4285F4",
+  },
+  {
+    name: "REST API",
+    icon: "https://cdn.simpleicons.org/fastapi/009688",
   },
 ]
 
 export function SkillsGrid() {
   return (
-    <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-4">
+    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-x-4 gap-y-14">
       {skills.map((skill, index) => (
         <motion.div
           key={skill.name}
-          initial={{ opacity: 0, y: 20, scale: 0.8 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ delay: 0.3 + index * 0.05, type: "spring", stiffness: 200 }}
+          initial={{
+            opacity: 0,
+            y: 20,
+            scale: 0.8,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            scale: 1,
+          }}
+          transition={{
+            delay: 0.3 + index * 0.05,
+            type: "spring",
+            stiffness: 200,
+          }}
           whileHover={{
             y: -8,
-            scale: 1.1,
+            scale: 1.08,
             boxShadow: "0 20px 40px -10px rgba(0,0,0,0.15)",
           }}
-          className="group"
+          className="group relative"
         >
-          <div className="relative bg-white rounded-2xl p-4 shadow-lg shadow-slate-200/50 border border-slate-100 transition-all duration-300 cursor-pointer">
-            {/* Neumorphic inner shadow effect */}
-            <div className="absolute inset-1 rounded-xl bg-gradient-to-br from-slate-50 to-white" />
+          {/* Skill Card */}
+          <div className="relative bg-white rounded-2xl p-5 shadow-lg shadow-slate-200/50 border border-slate-100 cursor-pointer transition-all duration-300">
 
-            {/* Icon container */}
-            <div className="relative w-10 h-10 mx-auto flex items-center justify-center">
+            {/* Neumorphic Background */}
+            <div className="absolute inset-1 rounded-xl bg-gradient-to-br from-slate-50 to-white pointer-events-none" />
+
+            {/* Icon */}
+            <div className="relative w-12 h-12 mx-auto flex items-center justify-center">
               <img
-                src={skill.icon || "/placeholder.svg"}
+                src={skill.icon}
                 alt={skill.name}
-                className="w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110"
+                className="w-9 h-9 object-contain transition-transform duration-300 group-hover:scale-110"
               />
             </div>
 
-            {/* Tooltip on hover */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileHover={{ opacity: 1, y: 0 }}
-              className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-slate-800 text-white text-xs rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-10"
+            {/* Tooltip */}
+            <div
+              className="
+                absolute
+                left-1/2
+                top-full
+                mt-4
+                -translate-x-1/2
+                whitespace-nowrap
+                rounded-lg
+                bg-slate-800
+                px-4
+                py-2
+                text-sm
+                font-semibold
+                text-white
+                opacity-0
+                invisible
+                translate-y-1
+                transition-all
+                duration-200
+                group-hover:opacity-100
+                group-hover:visible
+                group-hover:translate-y-0
+                z-50
+                pointer-events-none
+                shadow-lg
+              "
             >
+              {/* Tooltip Arrow */}
+              <div
+                className="
+                  absolute
+                  -top-1.5
+                  left-1/2
+                  -translate-x-1/2
+                  h-3
+                  w-3
+                  rotate-45
+                  bg-slate-800
+                "
+              />
+
               {skill.name}
-            </motion.div>
+            </div>
           </div>
         </motion.div>
       ))}

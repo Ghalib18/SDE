@@ -6,7 +6,22 @@ import { Navigation } from "@/components/ui/navigation"
 import Image from "next/image"
 
 const projects = [
+ 
+
   {
+    id: "rightsy",
+    title: "Rightsy",
+    description:
+      "Gamified legal education platform for ages 6-16 with 10+ interactive games and story-based videos. Scaled to 1000+ monthly visitors.",
+    tags: ["SpringBoot", "Redis", "PostgreSQl", "YouTube API","RAG"],
+    link: "https://v0-rightsy.vercel.app/",
+    github: "https://github.com/Ghalib18/RightsyBackend",
+    gradient: "from-emerald-500 via-teal-500 to-cyan-500",
+    highlights: ["45% engagement increase", "AI-ChatBot", "<200ms response time"],
+    image: "/rightsy.png",
+  },
+  
+   {
     id: "prepai",
     title: "AI-Mock Interview",
     description:
@@ -20,31 +35,19 @@ const projects = [
   },
 
   {
-    id: "youtube-toolkit",
-    title: "BuzzTube",
+    id: "MediBot",
+    title: "MediBot",
     description:
-      "Backend for AI-powered thumbnail, title, and description generation using Gemini Flash 2.5. Serving 1.2K creators monthly with 60% prep time reduction.",
-    tags: ["Node.js", "Gemini AI", "Stripe", "AWS"],
-    link: "https://buzz-tube-dzwe-d0v7j0w75-anish1279s-projects.vercel.app/",
-    github: "https://buzz-tube-dzwe-d0v7j0w75-anish1279s-projects.vercel.app/",
+      "Enables users to ask health-related questions and receive document-grounded information on diseases, symptoms, and general wellness using semantic search and RAG, while clearly avoiding diagnosis or medical advice.",
+    tags: ["RAG", "LLM", "Huggingface", "Python"],
+    link: "https://1minbot.streamlit.app/",
+    github: "https://github.com/Ghalib18/mediBot",
     gradient: "from-orange-500 via-amber-500 to-yellow-500",
-    highlights: ["$75K ARR", "30% MoM revenue growth", "99.9% uptime"],
-    image: "/buzztube.png",
+   highlights: ["RAG-based system", "FAISS semantic search", "Open-source LLM"],
+
+    image: "/medibot.jpg",
   },
 
-  {
-    id: "rightsy",
-    title: "Rightsy",
-    description:
-      "Gamified legal education platform for ages 6-16 with 10+ interactive games and story-based videos. Scaled to 1000+ monthly visitors.",
-    tags: ["Next.js", "React", "MongoDB", "YouTube API"],
-    link: "https://github.com/Ghalib18/rightsy",
-    github: "https://github.com/Ghalib18/rightsy",
-    gradient: "from-emerald-500 via-teal-500 to-cyan-500",
-    highlights: ["45% engagement increase", "25% retention boost", "<200ms response time"],
-    image: "/rightsy.png",
-  },
-  
   {
     id: "innobyte",
     title: "RestHouse-Management",

@@ -27,7 +27,7 @@ const achievements = [
     id: "hncc",
     title: "Treasurer at HNCC",
     subtitle: "Coding Club of BIT Sindri",
-    period: "2025 - Present",
+    period: "2025 - 2026",
     description: [
       "Managing finances and budget allocation for club activities",
       "Organizing coding competitions and workshops",
@@ -60,12 +60,15 @@ const achievements = [
     id: "technix",
     title: "SDE Intern at Technix India",
     subtitle: "Software Development",
-    period: "July 2025 - Sep 2025",
+    period: "Feb 2026 - Sep 2026",
     description: [
-      "Built Node.js backend for AI YouTube toolkit with Gemini Flash 2.5",
-      "Deployed Stripe subscription billing generating $75K ARR",
-      "Secured REST APIs with JWT auth for 5K+ users",
-      "Engineered AWS microservices to handle 200% traffic spikes",
+      "Built scalable backend services using Java, Spring Boot, REST APIs, JPA, and Hibernate across 20+ APIs.",
+      "Optimized MySQL operations with JPA/Hibernate, managing 100K+ records, queries, mappings, and transactions.",
+
+      "Implemented Redis caching for frequently accessed data, reducing database load and API response time.",
+
+      "Secured 25+ REST endpoints using Spring Security, JWT authentication, and role-based access control."
+
     ],
     icon: Briefcase,
     color: "from-purple-500 to-pink-500",
