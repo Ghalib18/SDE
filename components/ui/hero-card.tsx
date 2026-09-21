@@ -50,7 +50,7 @@ export function HeroCard() {
             {/* Greeting */}
             <motion.div className="flex items-center justify-center gap-2">
               <span className="text-lg font-medium text-sky-100 shadow-black drop-shadow-md">{"Hi! I'm"}</span>
-              <span className="text-3xl font-bold tracking-tight drop-shadow-lg"> Md Ghalib Hussain</span>
+              <span className="text-3xl font-bold tracking-tight drop-shadow-lg">Ghalib Hussain</span>
             </motion.div>
 
             {/* Main Title */}
